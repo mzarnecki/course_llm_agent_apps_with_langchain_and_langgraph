@@ -44,4 +44,10 @@ Tworzenie agenta ReAct — połączenie reasoning + acting z wykorzystaniem narz
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
 [7_1_LangGraph_introduction.ipynb](7_1_LangGraph_introduction.ipynb)  
-Wprowadzenie do LangGraph — modelowanie agentów i workflowów w postaci grafów stanów.
+Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agentów i workflowów w postaci grafów stanów.
+
+[7_2_LangGraph_tool-node_conditional-edge_loop.ipynb](7_2_LangGraph_tool-node_conditional-edge_loop.ipynb)
+Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
+
+[7_3_LangGraph_RAG.ipynb](7_3_LangGraph_RAG.ipynb)
+Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
