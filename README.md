@@ -51,3 +51,6 @@ Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły
 
 [7_3_LangGraph_RAG.ipynb](7_3_LangGraph_RAG.ipynb)
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
+
+[9_1_Discussion_panel.ipynb](9_1_Discussion_panel.ipynb)
+Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
