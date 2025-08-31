@@ -43,17 +43,17 @@ Tworzenie agenta ReAct — połączenie reasoning + acting z wykorzystaniem narz
 [6_1_RAG_basic_example.ipynb](6_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[6_2_RAG_loop_and_evaluation.ipynb](6_2_RAG_loop_and_evaluation.ipynb)
+[6_2_RAG_loop_and_evaluation.ipynb](6_2_RAG_loop_and_evaluation.ipynb)  
 Zaawansowany RAG z ewaluacją i pętlą.
 
 [7_1_LangGraph_introduction.ipynb](7_1_LangGraph_introduction.ipynb)  
 Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agentów i workflowów w postaci grafów stanów.
 
-[7_2_LangGraph_tool-node_conditional-edge_loop.ipynb](7_2_LangGraph_tool-node_conditional-edge_loop.ipynb)
+[7_2_LangGraph_tool-node_conditional-edge_loop.ipynb](7_2_LangGraph_tool-node_conditional-edge_loop.ipynb)  
 Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
 
-[7_3_LangGraph_RAG.ipynb](7_3_LangGraph_RAG.ipynb)
+[7_3_LangGraph_RAG.ipynb](7_3_LangGraph_RAG.ipynb)  
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
-[9_1_Discussion_panel.ipynb](9_1_Discussion_panel.ipynb)
+[9_1_Discussion_panel.ipynb](9_1_Discussion_panel.ipynb)  
 Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
