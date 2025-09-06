@@ -16,43 +16,43 @@ Omówienie najważniejszych parametrów modeli (temperature, top_p, max_tokens) 
 [2_4_LangChain_chat_with_memory.ipynb](2_4_LangChain_chat_with_memory.ipynb)  
 Przykład budowy prostego czatu z pamięcią konwersacji przy użyciu `RunnableWithMessageHistory`.
 
-[3_2_Five_rules_of_effective_prompt_engineering.ipynb](3_2_Five_rules_of_effective_prompt_engineering.ipynb)  
+[3_2_Five_rules_of_effective_prompt_engineering.ipynb](5_2_Five_rules_of_effective_prompt_engineering.ipynb)  
 Ilustracja pięciu zasad skutecznej inżynierii promptów: jasne instrukcje, przykłady, formaty, kroki i testowanie.
 
-[4_2_Evaluation_string_and_comparison.ipynb](4_2_Evaluation_string_and_comparison.ipynb)  
+[4_2_Evaluation_string_and_comparison.ipynb](6_2_Evaluation_string_and_comparison.ipynb)  
 Ewaluacja wyników modeli przy użyciu klasycznych metryk tekstowych (BLEU, ROUGE, METEOR).
 
-[4_3_Evaluation_criteria.ipynb](4_3_Evaluation_criteria.ipynb)  
+[4_3_Evaluation_criteria.ipynb](6_3_Evaluation_criteria.ipynb)  
 Przykłady użycia **Criteria Evaluator** do oceny odpowiedzi wg kryteriów takich jak poprawność, zwięzłość czy przydatność.
 
-[4_4_Evaluation_trajectory.ipynb](4_4_Evaluation_trajectory.ipynb)  
+[4_4_Evaluation_trajectory.ipynb](6_4_Evaluation_trajectory.ipynb)  
 Ocena ścieżki rozumowania modelu (trajectory) — sprawdzanie poprawności procesu krok po kroku.
 
-[4_5_Guardrails.ipynb](4_5_Guardrails.ipynb)  
+[4_5_Guardrails.ipynb](6_5_Guardrails.ipynb)  
 Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi oraz filtrowanie fallback messages.
 
-[5_1_LangChain_chains.ipynb](5_1_LangChain_chains.ipynb)  
+[5_1_LangChain_chains.ipynb](3_1_LangChain_chains.ipynb)  
 Budowa różnych typów chains: prosty, sekwencyjny, równoległy i przykładowy RAG chain.
 
-[5_2_LangChain_tools.ipynb](5_2_LangChain_tools.ipynb)  
+[5_2_LangChain_tools.ipynb](3_2_LangChain_tools.ipynb)  
 Definiowanie własnych narzędzi (tools) w LangChain oraz integracja z agentami.
 
-[5_3_LangChain_ReAct_agent.ipynb](5_3_LangChain_ReAct_agent.ipynb)  
+[5_3_LangChain_ReAct_agent.ipynb](3_3_LangChain_ReAct_agent.ipynb)  
 Tworzenie agenta ReAct — połączenie reasoning + acting z wykorzystaniem narzędzi w iteracyjnej pętli.
 
-[6_1_RAG_basic_example.ipynb](6_1_RAG_basic_example.ipynb)  
+[6_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[6_2_RAG_loop_and_evaluation.ipynb](6_2_RAG_loop_and_evaluation.ipynb)  
+[6_2_RAG_loop_and_evaluation.ipynb](7_2_RAG_loop_and_evaluation.ipynb)  
 Zaawansowany RAG z ewaluacją i pętlą.
 
-[7_1_LangGraph_introduction.ipynb](7_1_LangGraph_introduction.ipynb)  
+[7_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)  
 Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agentów i workflowów w postaci grafów stanów.
 
-[7_2_LangGraph_tool-node_conditional-edge_loop.ipynb](7_2_LangGraph_tool-node_conditional-edge_loop.ipynb)  
+[7_2_LangGraph_tool-node_conditional-edge_loop.ipynb](8_2_LangGraph_tool-node_conditional-edge_loop.ipynb)  
 Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
 
-[7_3_LangGraph_RAG.ipynb](7_3_LangGraph_RAG.ipynb)  
+[7_3_LangGraph_RAG.ipynb](8_3_LangGraph_RAG.ipynb)  
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
 [9_1_Application_discussion_panel.ipynb](9_1_Application_discussion_panel.ipynb)  
@@ -61,5 +61,5 @@ Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
 [10_1_Application_agent_publisher.ipynb](10_1_Application_agent_publisher.ipynb)  
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
-[11_1_Multimodal_models.ipynb](11_1_Multimodal_models.ipynb)  
+[11_1_Multimodal_models.ipynb](4_1_Multimodal_models.ipynb)  
 Modele multimodalne - przykłady przetwarzania danych graficznych oraz audio przez model.
