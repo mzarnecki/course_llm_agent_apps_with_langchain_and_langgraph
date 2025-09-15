@@ -31,9 +31,6 @@ Modele multimodalne - przykłady przetwarzania danych graficznych oraz audio prz
 [5_2_Five_rules_of_effective_prompt_engineering.ipynb](5_2_Five_rules_of_effective_prompt_engineering.ipynb)
 Ilustracja pięciu zasad skutecznej inżynierii promptów: jasne instrukcje, przykłady, formaty, kroki i testowanie.
 
-[6_1_Input_Output_evaluation_pydantic.ipynb](6_1_Input_Output_evaluation_pydantic.ipynb)
-Walidacaj wejścia i wyjscia za pomocą biblioteki Pydantic.
-
 [6_2_Evaluation_string_and_comparison.ipynb](6_2_Evaluation_string_and_comparison.ipynb)
 Ewaluacja wyników modeli przy użyciu klasycznych metryk tekstowych (BLEU, ROUGE, METEOR).
 
