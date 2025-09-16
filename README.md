@@ -46,8 +46,8 @@ Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi 
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[7_2_RAG_loop_and_evaluation.ipynb](7_2_RAG_loop_and_evaluation.ipynb)
-Zaawansowany RAG z ewaluacją i pętlą.
+[7_2_LLM_streamlit_chatbot_RAG](7_2_LLM_streamlit_chatbot_RAG)[7_2_RAG_loop_and_evaluation.ipynb](7_2_RAG_loop_and_evaluation.ipynb)
+Aplikacja chatbota oparta na LLM i RAG.
 
 [8_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)
 Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agentów i workflowów w postaci grafów stanów.
