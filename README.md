@@ -4,10 +4,10 @@ Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzen
 
 ## 📚 Spis treści notebooków
 
-[2_1_LangChain_hello-world.ipynb](2_1_LangChain_hello-world.ipynb)  
+[2_1_LangChain_hello-world.ipynb](2_1_LangChain_hello_world.ipynb)  
 Pierwszy krok z LangChain — prosty przykład "Hello World" z użyciem modelu OpenAI i pliku `.env`.
 
-[2_2_LangChain_components.ipynb](2_2_LangChain_components.ipynb)  
+[2_2_LangChain_components.ipynb](2_2_LangChain_core_components.ipynb)  
 Przegląd podstawowych komponentów LangChain: prompty, modele, output parsers i retrievery.
 
 [2_3_LangChain_model_parameters.ipynb](2_3_LangChain_model_parameters.ipynb)  
