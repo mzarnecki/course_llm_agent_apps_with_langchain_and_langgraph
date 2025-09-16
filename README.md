@@ -28,34 +28,34 @@ Tworzenie agenta ReAct — połączenie reasoning + acting z wykorzystaniem narz
 [4_1_Multimodal_models.ipynb](4_1_Multimodal_models.ipynb)  
 Modele multimodalne - przykłady przetwarzania danych graficznych oraz audio przez model.
 
-[5_2_Five_rules_of_effective_prompt_engineering.ipynb](5_2_Five_rules_of_effective_prompt_engineering.ipynb)
+[5_2_Five_rules_of_effective_prompt_engineering.ipynb](5_2_Five_rules_of_effective_prompt_engineering.ipynb)  
 Ilustracja pięciu zasad skutecznej inżynierii promptów: jasne instrukcje, przykłady, formaty, kroki i testowanie.
 
-[6_2_Evaluation_string_and_comparison.ipynb](6_2_Evaluation_string_and_comparison.ipynb)
+[6_2_Evaluation_string_and_comparison.ipynb](6_2_Evaluation_string_and_comparison.ipynb)  
 Ewaluacja wyników modeli przy użyciu klasycznych metryk tekstowych (BLEU, ROUGE, METEOR).
 
-[6_3_Evaluation_criteria.ipynb](6_3_Evaluation_criteria.ipynb)
+[6_3_Evaluation_criteria.ipynb](6_3_Evaluation_criteria.ipynb)  
 Przykłady użycia **Criteria Evaluator** do oceny odpowiedzi wg kryteriów takich jak poprawność, zwięzłość czy przydatność.
 
-[6_4_Evaluation_trajectory.ipynb](6_4_Evaluation_trajectory.ipynb)
+[6_4_Evaluation_trajectory.ipynb](6_4_Evaluation_trajectory.ipynb)  
 Ocena ścieżki rozumowania modelu (trajectory) — sprawdzanie poprawności procesu krok po kroku.
 
-[6_5_Guardrails.ipynb](6_5_Guardrails.ipynb)
+[6_5_Guardrails.ipynb](6_5_Guardrails.ipynb)  
 Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi oraz filtrowanie fallback messages.
 
-[7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)
+[7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[7_2_LLM_streamlit_chatbot_RAG](7_2_LLM_streamlit_chatbot_RAG)[7_2_RAG_loop_and_evaluation.ipynb](7_2_RAG_loop_and_evaluation.ipynb)
+[7_2_LLM_streamlit_chatbot_RAG](7_2_LLM_streamlit_chatbot_RAG)[7_2_RAG_loop_and_evaluation.ipynb](7_2_RAG_loop_and_evaluation.ipynb)  
 Aplikacja chatbota oparta na LLM i RAG.
 
-[8_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)
+[8_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)  
 Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agentów i workflowów w postaci grafów stanów.
 
-[8_2_LangGraph_tool-node_conditional-edge_loop.ipynb](8_2_LangGraph_tool-node_conditional-edge_loop.ipynb)
+[8_2_LangGraph_tool-node_conditional-edge_loop.ipynb](8_2_LangGraph_tool-node_conditional-edge_loop.ipynb)  
 Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
 
-[8_3_LangGraph_RAG.ipynb](8_3_LangGraph_RAG.ipynb)
+[8_3_LangGraph_RAG.ipynb](8_3_LangGraph_RAG.ipynb)  
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
 [9_1_Application_discussion_panel.ipynb](9_1_Application_discussion_panel.ipynb)  
@@ -64,8 +64,8 @@ Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
 [10_1_Application_agent_publisher.ipynb](10_1_Application_agent_publisher.ipynb)  
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
-[11_1_Application_financial_report_generator.ipynb](11_1_Application_financial_report_generator.ipynb)
+[11_1_Application_financial_report_generator.ipynb](11_1_Application_financial_report_generator.ipynb)  
 Przykład aplikacji generujacej raport finansowy.
 
-[12_2_Deployment_on_production_and_future.ipynb](12_2_Deployment_on_production_and_future.ipynb)
+[12_2_Deployment_on_production_and_future.ipynb](12_2_Deployment_on_production_and_future.ipynb)  
 Wzorzec model agnostic oraz monitoring kosztów.
