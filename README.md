@@ -61,11 +61,11 @@ Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 [9_1_Application_discussion_panel.ipynb](9_1_Application_discussion_panel.ipynb)  
 Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
 
-[10_1_Application_agent_publisher.ipynb](10_1_Application_agent_publisher.ipynb)  
+[10_1_Application_agent_publisher.ipynb](9_1_Application_agent_publisher.ipynb)  
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
-[11_1_Application_financial_report_generator.ipynb](11_1_Application_financial_report_generator.ipynb)  
+[11_1_Application_financial_report_generator.ipynb](11_2_Application_financial_report_generator.ipynb)  
 Przykład aplikacji generujacej raport finansowy.
 
-[12_2_Deployment_on_production_and_future.ipynb](12_2_Deployment_on_production_and_future.ipynb)  
+[12_2_Deployment_on_production_and_future.ipynb](11_1_Deployment_on_production_and_future.ipynb)  
 Wzorzec model agnostic oraz monitoring kosztów.
