@@ -43,6 +43,9 @@ Ocena ścieżki rozumowania modelu (trajectory) — sprawdzanie poprawności pro
 [6_5_Guardrails.ipynb](6_5_Guardrails.ipynb)  
 Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi oraz filtrowanie fallback messages.
 
+[7_1_vector_database.ipynb](7_1_vector_database.ipynb)
+Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
+
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
@@ -55,7 +58,10 @@ Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agent
 [8_2_LangGraph_tool-node_conditional-edge_loop.ipynb](8_2_LangGraph_tool_node_conditional_edge_loop.ipynb)  
 Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
 
-[8_3_LangGraph_RAG.ipynb](8_4_LangGraph_RAG.ipynb)  
+[8_3_LangGraph_agent_patterns.ipynb](8_3_LangGraph_agent_patterns.ipynb)
+Struktury apliakcji opartych na agentach AI.
+
+[8_4_LangGraph_RAG.ipynb](8_4_LangGraph_RAG.ipynb)
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
 [9_1_Application_discussion_panel.ipynb](9_1_Application_discussion_panel.ipynb)  
@@ -64,8 +70,8 @@ Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
 [10_1_Application_agent_publisher.ipynb](9_1_Application_agent_publisher.ipynb)  
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
-[11_1_Application_financial_report_generator.ipynb](11_2_Application_financial_report_generator.ipynb)  
-Przykład aplikacji generujacej raport finansowy.
-
-[12_2_Deployment_on_production_and_future.ipynb](11_1_Deployment_on_production_and_future.ipynb)  
+[11_1_Deployment_on_production_and_future.ipynb](11_1_Deployment_on_production_and_future.ipynb)  
 Wzorzec model agnostic oraz monitoring kosztów.
+
+[11_2_Application_financial_report_generator.ipynb](11_2_Application_financial_report_generator.ipynb)  
+Przykład aplikacji generujacej raport finansowy.
