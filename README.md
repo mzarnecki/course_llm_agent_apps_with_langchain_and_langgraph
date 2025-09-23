@@ -43,7 +43,7 @@ Ocena ścieżki rozumowania modelu (trajectory) — sprawdzanie poprawności pro
 [6_5_Guardrails.ipynb](6_5_Guardrails.ipynb)  
 Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi oraz filtrowanie fallback messages.
 
-[7_1_vector_database.ipynb](7_1_vector_database.ipynb)
+[7_1_vector_database.ipynb](7_1_Vector_database.ipynb)
 Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
 
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
