@@ -58,10 +58,10 @@ Wprowadzenie do LangGraph — komponenty biblioteki LangGraph, modelowanie agent
 [8_2_LangGraph_tool-node_conditional-edge_loop.ipynb](8_2_LangGraph_tool_node_conditional_edge_loop.ipynb)  
 Zaawansowane elementy grafu LangGraph - połączenia warunkowe, pętle i węzły narzędzi.
 
-[8_3_LangGraph_agent_patterns.ipynb](8_3_LangGraph_agent_patterns.ipynb)
+[8_3_LangGraph_agent_patterns.ipynb](8_3_LangGraph_agent_patterns.ipynb)  
 Struktury apliakcji opartych na agentach AI.
 
-[8_4_LangGraph_RAG.ipynb](8_4_LangGraph_RAG.ipynb)
+[8_4_LangGraph_RAG.ipynb](8_4_LangGraph_RAG.ipynb)  
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
 [9_1_Application_discussion_panel.ipynb](9_1_Application_discussion_panel.ipynb)  
