@@ -43,13 +43,13 @@ Ocena ścieżki rozumowania modelu (trajectory) — sprawdzanie poprawności pro
 [6_5_Guardrails.ipynb](6_5_Guardrails.ipynb)  
 Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi oraz filtrowanie fallback messages.
 
-[7_1_Vector_database.ipynb](7_1_vector_database.ipynb)   
-Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
-
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[7_2_LLM_streamlit_chatbot_RAG](7_3_LLM_streamlit_chatbot_RAG)  
+[7_2_Vector_database.ipynb](7_2_vector_database.ipynb)   
+Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
+
+[7_3_LLM_streamlit_chatbot_RAG](7_3_LLM_streamlit_chatbot_RAG)  
 Aplikacja chatbota oparta na LLM i RAG z wykorzystaniem frameworku Streamlit.
 
 [8_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)  
