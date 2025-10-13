@@ -49,7 +49,7 @@ Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[7_2_LLM_streamlit_chatbot_RAG](7_2_LLM_streamlit_chatbot_RAG)  
+[7_2_LLM_streamlit_chatbot_RAG](7_3_LLM_streamlit_chatbot_RAG)  
 Aplikacja chatbota oparta na LLM i RAG z wykorzystaniem frameworku Streamlit.
 
 [8_1_LangGraph_introduction.ipynb](8_1_LangGraph_introduction.ipynb)  
