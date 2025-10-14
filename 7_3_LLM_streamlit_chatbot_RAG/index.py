@@ -1,6 +1,5 @@
 import os
 from lib import utils
-from lib.streaming import StreamHandler
 import streamlit as st
 
 from langchain_community.vectorstores import DocArrayInMemorySearch
