@@ -58,3 +58,6 @@ def configure_embedding_model():
 def sync_st_session():
     for k, v in st.session_state.items():
         st.session_state[k] = v
+
+def format_docs(docs):
+    return "\n\n".join(doc.page_content for doc in docs)
