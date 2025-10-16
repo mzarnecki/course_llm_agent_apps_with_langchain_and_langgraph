@@ -41,6 +41,12 @@ class CustomDocChatbot:
         )
 
     def get_session_history(self, session_id: str) -> BaseChatMessageHistory:
+        """Retrieves the chat message history for a specific session
+        Args:
+            session_id (str): The session ID
+        Returns:
+            BaseChatMessageHistory: The chat message history for the session
+        """
         if session_id not in self.store:
             self.store[session_id] = ChatMessageHistory()
             # Initialize with existing messages from streamlit session
@@ -52,8 +58,13 @@ class CustomDocChatbot:
                         self.store[session_id].add_message(AIMessage(content=msg["content"]))
         return self.store[session_id]
 
-    def prepare_rag_chain(self):
-        # Simplified retrieval chain - direct retrieval without contextualization
+    def prepare_rag_chain(self)->RunnableWithMessageHistory:
+        """Prepares the RAG chain
+
+        Returns:
+            RunnableWithMessageHistory: The RAG chain
+        """
+        # Retrieval chain - direct retrieval without contextualization
         retrieval_chain = RunnablePassthrough.assign(
             context=lambda x: self.retriever.invoke(x["input"])
         ) | RunnablePassthrough.assign(

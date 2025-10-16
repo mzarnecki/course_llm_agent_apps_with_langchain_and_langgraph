@@ -7,7 +7,12 @@ class DocumentLoader:
     def __init__(self):
         self.documents_path = ''
 
-    def load_chunks(self):
+    def load_chunks(self)->list[Document]:
+        """Load and chunk text documents from the data directory.
+
+        Returns:
+            list[Document]: A list of Document objects
+        """
         docs = []
         files = []
         data_path = Path("data")

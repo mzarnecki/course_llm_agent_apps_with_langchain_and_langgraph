@@ -1,7 +1,12 @@
 from langchain_core.prompts import MessagesPlaceholder, ChatPromptTemplate
 
 class ChatPrompt:
-    def get_prompt(self):
+    def get_prompt(self)->ChatPromptTemplate:
+        """Crete prompt template with system prompt, placeholder for chat history, and user question.
+
+        Returns:
+            ChatPromptTemplate: LangChain template for chatbot prompt.
+        """
         return ChatPromptTemplate.from_messages([
             ("system",
              "You are a chatbot tasked with responding to questions based on attached documents content.\n"
