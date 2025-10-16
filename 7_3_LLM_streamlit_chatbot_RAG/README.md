@@ -18,6 +18,8 @@ to run chat in browser streamlit library was used
 3. run script with command:\
 `streamlit run index.py`
 
-To run it for your purpose you can replace source documents in /data dir and prompt in index.py.
+To run it for your purpose you can replace source documents in /data directory with your files.
+Prompt stored in [ChatPrompt.py](lib/ChatPrompt.py) also can be modified to fit your needs.
+
 
 this project was originally based on https://github.com/shashankdeshpande/langchain-chatbot
