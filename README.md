@@ -4,7 +4,7 @@ Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzen
 
 ## 📚 Spis treści notebooków
 
-[1_3_Difference_in_models.ipynb](1_3_Difference_in_models.ipynb)
+[1_3_Difference_in_LLMs.ipynb](1_3_Difference_in_LLMs.ipynb)  
 Porównanie odpowiedziach różnych modeli 
 
 [2_1_LangChain_hello-world.ipynb](2_1_LangChain_hello_world.ipynb)  
