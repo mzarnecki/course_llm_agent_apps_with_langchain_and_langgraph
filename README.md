@@ -73,8 +73,8 @@ Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"
 [10_1_Application_agent_publisher.ipynb](10_1_Application_agent_publisher.ipynb)  
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
-[11_1_Model_agnostic_gateway_production.ipynb](11_1_Model_agnostic_gateway_production.ipynb)
+[11_1_Model_agnostic_gateway_production.ipynb](11_1_Model_agnostic_gateway_production.ipynb)  
 Wzorzec model agnostic oraz monitoring kosztów.
 
-[12_0_Bonus_Application_financial_report_generator.ipynb](12_0_Bonus_Application_financial_report_generator.ipynb)
+[12_0_Bonus_Application_financial_report_generator.ipynb](12_0_Bonus_Application_financial_report_generator.ipynb)  
 Przykład aplikacji generujacej raport finansowy.
