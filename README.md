@@ -16,7 +16,7 @@ Przykłady wykoorzystania LLMów - typowe use case.
 [2_3_LangChain_core_components.ipynb](2_3_LangChain_core_components.ipynb)   
 Przegląd podstawowych komponentów LangChain: prompty, modele, output parsers i retrievery.
 
-[2_4_LangChain_model_parameters.ipynb](2_4_LangChain_model_parameters.ipynb)
+[2_4_LangChain_model_parameters.ipynb](2_4_LangChain_model_parameters.ipynb)   
 Omówienie najważniejszych parametrów modeli (temperature, top_p, max_tokens) wraz z przykładami.
 
 [3_1_LangChain_chains.ipynb](3_1_LangChain_chains.ipynb)  
