@@ -10,13 +10,13 @@ Porównanie odpowiedziach różnych modeli
 [2_1_LangChain_hello-world.ipynb](2_1_LangChain_hello_world.ipynb)  
 Pierwszy krok z LangChain — prosty przykład "Hello World" z użyciem modelu OpenAI i pliku `.env`.
 
-[2_2_LangChain_llm_use_cases.ipynb](2_2_LangChain_llm_use_cases.ipynb) 
+[2_2_LangChain_llm_use_cases.ipynb](2_2_LangChain_llm_use_cases.ipynb)  
 Przykłady wykoorzystania LLMów - typowe use case.
 
-[2_3_LangChain_core_components.ipynb](2_3_LangChain_core_components.ipynb)
+[2_3_LangChain_core_components.ipynb](2_3_LangChain_core_components.ipynb)   
 Przegląd podstawowych komponentów LangChain: prompty, modele, output parsers i retrievery.
 
-[2_4_LangChain_model_parameters.ipynb](2_4_LangChain_model_parameters.ipynb)
+[2_4_LangChain_model_parameters.ipynb](2_4_LangChain_model_parameters.ipynb)   
 Omówienie najważniejszych parametrów modeli (temperature, top_p, max_tokens) wraz z przykładami.
 
 [3_1_LangChain_chains.ipynb](3_1_LangChain_chains.ipynb)  
@@ -49,7 +49,7 @@ Guardrails w praktyce: walidacja JSON/XML, regexy, limity długości odpowiedzi 
 [7_1_RAG_basic_example.ipynb](7_1_RAG_basic_example.ipynb)  
 Podstawowy przykład Retrieval-Augmented Generation: indeksowanie dokumentów, wyszukiwanie kontekstu i generowanie odpowiedzi.
 
-[7_2_Vector_database.ipynb](7_2_Vector_database.ipynb)
+[7_2_Vector_database.ipynb](7_2_Vector_database.ipynb)   
 Tworzenie bazy wektorowej i wyszukiwanie semantyczne.
 
 [7_3_LLM_streamlit_chatbot_RAG](7_3_LLM_streamlit_chatbot_RAG)  
@@ -67,7 +67,7 @@ Struktury apliakcji opartych na agentach AI.
 [8_4_LangGraph_RAG.ipynb](8_4_LangGraph_RAG.ipynb)  
 Zastosowanie Retrieval Augmented Generation w grafie LangGraph.
 
-[9_1_Application_agent_publisher.ipynb](9_1_Application_agent_publisher.ipynb)
+[9_1_Application_agent_publisher.ipynb](9_1_Application_agent_publisher.ipynb)   
 Przykład aplikacji opartej LangGraph - "Wydawca artykułów"
 
 [10_1_Application_discussion_panel_with_supervisor.ipynb](10_1_Application_discussion_panel_with_supervisor.ipynb)   
