@@ -2,6 +2,11 @@
 
 Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzenie aplikacji opartych na LLM i agentach AI z LangChain oraz LangGraph" (videopoint/Helion 2025)
 
+## Uruchomienie
+1. Zainstaluj wymagane biblioteki  
+`pip install -r requirements.txt`
+2. Uruchom wybrany notebook
+
 ## 📚 Spis treści notebooków
 
 [1_3_Difference_in_LLMs.ipynb](1_3_Difference_in_LLMs.ipynb)  
@@ -78,3 +83,9 @@ Wzorzec aplikacji model agnostic API gateway oraz human in the loop.
 
 [12_0_Bonus_Application_financial_report_generator.ipynb](12_0_Bonus_Application_financial_report_generator.ipynb)  
 Przykład aplikacji generujacej raport finansowy.
+
+## Problemy
+
+W razie wystapienia konfliktu bibliotek odinstaluj zależności i zainstaluj ponownie.  
+`pip uninstall -y langchain langchain-core langchain-community langchain-classic langchain-text-spliitters langchain-openai langgraph-supervisor`  
+`pip install -r requirements.txt`
