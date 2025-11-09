@@ -1,0 +1,38 @@
+[project]
+name = "course-llm-langchain-langgraph"
+version = "0.1.0"
+description = "Notebooks and example apps for LLMs with LangChain & LangGraph"
+readme = "README.md"
+requires-python = ">=3.13"
+authors = [{ name = "Michał Żarnecki" }]
+license = { text = "MIT" }
+keywords = ["llm", "langchain", "langgraph", "agents", "course", "notebooks"]
+
+[project.optional-dependencies]
+# Dev extras you can install with: uv pip install -e .[dev]
+dev = [
+"ruff>=0.6.0",
+"pytest>=8.0.0",
+"nbmake>=1.5.3",
+"nbqa>=1.9.1",
+"nbdime>=4.0.2",
+"jupytext>=1.16.0",
+"pre-commit>=4.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "N", "C4", "W"]
+ignore = []
+
+[tool.nbqa]
+addopts = ["--nbqa-mutate"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+
+[tool.jupytext]
+formats = "ipynb,py:percent"

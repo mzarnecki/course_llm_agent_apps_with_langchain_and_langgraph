@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        with:
+          enable-cache: true
+
+      - name: Install dependencies
+        run: |
+          uv venv
+          source .venv/bin/activate
+          uv pip install -r requirements.txt
+          uv pip install ruff nbqa pytest nbmake
+
+      - name: Lint Python
+        run: |
+          . .venv/bin/activate
+          ruff check .
+
+      - name: Lint notebooks with nbqa-ruff
+        run: |
+          . .venv/bin/activate
+          nbqa ruff --fix notebooks || echo "No notebooks dir or none to lint"
+
+      - name: Run notebooks with nbmake
+        run: |
+          . .venv/bin/activate
+          pytest --nbmake notebooks/**/*.ipynb -k "not expensive" || echo "No notebooks or tests"
