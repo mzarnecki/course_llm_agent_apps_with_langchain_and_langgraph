@@ -9,20 +9,20 @@
 This repository also ships **English notebooks** meant for blog posts, tutorials and videos.
 
 ## Setup
-### 1) Install uv
-curl -LsSf https://astral.sh/uv/install.sh | sh
-### 2) Create a virtual environment
-uv venv
-### 3) Activate the virtual environment
-source .venv/bin/activate (for Windows: .venv\Scripts\activate)
-### 4) Install required libraries
-uv pip install -r requirements.txt
-### 5) Install the Jupyter Lab environment
-uv pip install jupyterlab ipykernel
-### 6) Register the kernel
-python -m ipykernel install --user --name=llm-course --display-name "LLM Course (uv)"
-### 7) Launch Jupyter Lab
-jupyter lab
+1) Install uv  
+`curl -LsSf https://astral.sh/uv/install.sh | sh`
+2) Create a virtual environment  
+`uv venv`
+3) Activate the virtual environment  
+`source .venv/bin/activate` (for Windows: `.venv\Scripts\activate`)
+4) Install required libraries  
+`uv pip install -r requirements.txt`
+5) Install the Jupyter Lab environment  
+`uv pip install jupyterlab ipykernel`
+6) Register the kernel  
+`python -m ipykernel install --user --name=llm-course --display-name "LLM Course (uv)"`
+7) Launch Jupyter Lab  
+`jupyter lab`
 
 ### 📚 List of notebooks
 
