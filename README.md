@@ -26,7 +26,7 @@ This repository also ships **English notebooks** meant for blog posts, tutorials
 
 ### 📚 List of notebooks
 
-| Link & name                                                                                                                           | Description                                                                                                |
+| Notebook                                                                                                                         | Description                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | [1_3_Difference_in_LLMs_en.ipynb](notebooks/en/1_3_Difference_in_LLMs_en.ipynb)                                                       | Comparison of responses across different models.                                                           |
 | [2_1_LangChain_hello_world_en.ipynb](notebooks/en/2_1_LangChain_hello_world_en.ipynb)                                                 | First steps with LangChain - a simple “Hello World” using an OpenAI model and a `.env` file.               |
@@ -110,7 +110,7 @@ Materiały do zadań i ćwiczeń znajdują się w folderze: `exercises/`
 | [12_0_Bonus_Application_financial_report_generator.ipynb](notebooks/pl/12_0_Bonus_Application_financial_report_generator.ipynb) | Przykład aplikacji generujacej raport finansowy.                                                                              |
 
 
-## Problemy
+## <del>Problemy</del> Wyzwania
 W razie wystapienia konfliktu bibliotek odinstaluj zależności i zainstaluj ponownie.  
 `pip uninstall -y langchain langchain-core langchain-community langchain-classic langchain-text-spliitters langchain-openai langgraph-supervisor`  
 `pip install -r requirements.txt`
