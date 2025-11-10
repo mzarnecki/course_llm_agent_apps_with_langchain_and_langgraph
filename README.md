@@ -1,6 +1,6 @@
 # AI apps development in LangChain & LangGraph - tutorial notebooks 
-## 🌍 [Go to English section](#en)
-## 🇵🇱 [Przejdź do sekcji PL](#pl)
+#### 🌍 [Go to English section](#en)
+#### 🇵🇱 [Przejdź do sekcji PL](#pl)
 
 ---
 
