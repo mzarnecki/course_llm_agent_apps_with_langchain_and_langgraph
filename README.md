@@ -110,7 +110,7 @@ Materiały do zadań i ćwiczeń znajdują się w folderze: `exercises/`
 | [12_0_Bonus_Application_financial_report_generator.ipynb](notebooks/pl/12_0_Bonus_Application_financial_report_generator.ipynb) | Przykład aplikacji generujacej raport finansowy.                                                                              |
 
 
-## Problemy
+## <del>Problemy</del> Wyzwania
 W razie wystapienia konfliktu bibliotek odinstaluj zależności i zainstaluj ponownie.  
 `pip uninstall -y langchain langchain-core langchain-community langchain-classic langchain-text-spliitters langchain-openai langgraph-supervisor`  
 `pip install -r requirements.txt`
