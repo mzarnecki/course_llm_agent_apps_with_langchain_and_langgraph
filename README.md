@@ -26,7 +26,7 @@ This repository also ships **English notebooks** meant for blog posts, tutorials
 
 ### 📚 List of notebooks
 
-| Link & name                                                                                                                           | Description                                                                                                |
+| Notebook                                                                                                                         | Description                                                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
 | [1_3_Difference_in_LLMs_en.ipynb](notebooks/en/1_3_Difference_in_LLMs_en.ipynb)                                                       | Comparison of responses across different models.                                                           |
 | [2_1_LangChain_hello_world_en.ipynb](notebooks/en/2_1_LangChain_hello_world_en.ipynb)                                                 | First steps with LangChain - a simple “Hello World” using an OpenAI model and a `.env` file.               |
