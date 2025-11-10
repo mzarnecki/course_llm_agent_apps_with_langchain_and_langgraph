@@ -25,6 +25,11 @@ jobs:
         with:
           enable-cache: false
 
+      - name: Install system dependencies (Graphviz)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y graphviz graphviz-dev
+
       - name: Install dependencies
         run: |
           uv venv
