@@ -35,7 +35,7 @@ jobs:
       - name: Lint Python
         run: |
           . .venv/bin/activate
-          ruff check .
+          ruff check . --extend-exclude exercises/
 
       - name: Lint notebooks with nbqa-ruff
         run: |

@@ -22,7 +22,7 @@ def enable_chat_history(func):
                 st.cache_resource.clear()
                 del st.session_state["current_page"]
                 del st.session_state["messages"]
-            except:
+            except Exception:
                 pass
 
         # show chat history on ui
