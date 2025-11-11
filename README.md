@@ -77,7 +77,7 @@ Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzen
 `jupyter lab`
 
 ### ✅ Ćwiczenia
-Materiały do zadań i ćwiczeń znajdują się w folderze: `exercises/`
+Materiały do zadań i ćwiczeń znajdują się w folderze: [exercises/pl/](exercises/pl)
 
 ## 📚 Spis treści notebooków
 
