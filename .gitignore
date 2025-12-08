@@ -1,6 +1,7 @@
 .env
 .idea/
 .ipynb_checkpoints
+.virtual_documents
 *__pycache__
 vectors.db
 working.ipynb
