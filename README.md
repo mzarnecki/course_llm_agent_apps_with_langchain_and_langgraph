@@ -26,8 +26,8 @@ This repository also ships **English notebooks** meant for blog posts, tutorials
 
 ### 📚 List of notebooks
 
-| Notebook                                                                                                                         | Description                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Notebook                                                                                                                              | Description                                                                                                |
+|---------------------------------------------------------------------------------------------------------------------------------------| ---------------------------------------------------------------------------------------------------------- |
 | [1_3_Difference_in_LLMs_en.ipynb](notebooks/en/1_3_Difference_in_LLMs_en.ipynb)                                                       | Comparison of responses across different models.                                                           |
 | [2_1_LangChain_hello_world_en.ipynb](notebooks/en/2_1_LangChain_hello_world_en.ipynb)                                                 | First steps with LangChain - a simple “Hello World” using an OpenAI model and a `.env` file.               |
 | [2_2_LangChain_llm_use_cases_en.ipynb](notebooks/en/2_2_LangChain_llm_use_cases_en.ipynb)                                             | Examples of typical LLM use cases.                                                                         |
@@ -44,7 +44,7 @@ This repository also ships **English notebooks** meant for blog posts, tutorials
 | [6_5_Guardrails_en.ipynb](notebooks/en/6_5_Guardrails_en.ipynb)                                                                       | Guardrails in practice: JSON/XML validation, regex checks, response length limits, and fallback filtering. |
 | [7_1_RAG_basic_example_en.ipynb](notebooks/en/7_1_RAG_basic_example_en.ipynb)                                                         | Basic Retrieval-Augmented Generation: document indexing, context search, and answer generation.            |
 | [7_2_Vector_database_en.ipynb](notebooks/en/7_2_Vector_database_en.ipynb)                                                             | Building a vector database and performing semantic search.                                                 |
-| [7_3_LLM_streamlit_chatbot_RAG_en](apps/7_3_LLM_streamlit_chatbot_RAG_en)                                                             | LLM + RAG chatbot app built with Streamlit.                                                                |
+| [7_3_LLM_streamlit_chatbot_RAG_en](apps/7_3_LLM_streamlit_chatbot_RAG)                                                                | LLM + RAG chatbot app built with Streamlit.                                                                |
 | [8_1_LangGraph_introduction_en.ipynb](notebooks/en/8_1_LangGraph_introduction_en.ipynb)                                               | Introduction to LangGraph - components, agent modeling, and state-graph workflows.                         |
 | [8_2_LangGraph_tool_node_conditional_edge_loop_en.ipynb](notebooks/en/8_2_LangGraph_tool_node_conditional_edge_loop_en.ipynb)         | Advanced graph elements: conditional edges, loops, and tool nodes.                                         |
 | [8_3_LangGraph_agent_patterns_en.ipynb](notebooks/en/8_3_LangGraph_agent_patterns_en.ipynb)                                           | Common design patterns for AI agent applications.                                                          |
