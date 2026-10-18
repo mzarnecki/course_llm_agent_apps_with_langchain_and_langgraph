@@ -8,21 +8,29 @@
 
 This repository also ships **English notebooks** meant for blog posts, tutorials and videos.
 
+The current course examples use the [LangChain Python docs](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph Python docs](https://docs.langchain.com/oss/python/langgraph/overview). Earlier lessons that teach legacy APIs use the `langchain-classic` compatibility package.
+
 ## Setup
-1) Install uv  
-`curl -LsSf https://astral.sh/uv/install.sh | sh`
-2) Create a virtual environment  
-`uv venv`
-3) Activate the virtual environment  
-`source .venv/bin/activate` (for Windows: `.venv\Scripts\activate`)
-4) Install required libraries  
-`uv pip install -r requirements.txt`
-5) Install the Jupyter Lab environment  
-`uv pip install jupyterlab ipykernel`
-6) Register the kernel  
-`python -m ipykernel install --user --name=llm-course --display-name "LLM Course (uv)"`
-7) Launch Jupyter Lab  
-`jupyter lab`
+### Google Colab
+
+1. In Colab, choose **File → Open notebook → GitHub** and enter this repository URL.
+2. Open any notebook and run its first code cell. It installs the packages used by that notebook. Notebooks that use sample files download them automatically.
+3. For OpenAI examples, add `OPENAI_API_KEY` under Colab's **Secrets** (🔑) and allow notebook access. Uncomment the short `userdata` snippet in the first cell to load the key. Other required secrets, such as `TAVILY_API_KEY`, are noted in the relevant notebook.
+
+### Local setup with uv
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then from the repository root run:
+
+```bash
+uv sync
+uv run jupyter lab
+```
+
+`uv sync` selects Python 3.13 from `.python-version`, creates `.venv`, and installs the versions pinned in the checked-in `uv.lock`; there is no activation or separate Jupyter kernel registration step. Copy `.env.example` to `.env` and add the keys you need. Keep `.env` private and never commit API keys.
+
+This environment is for the course notebooks. The Streamlit RAG app under `apps/7_3_LLM_streamlit_chatbot_RAG` has its own setup instructions and requirements file.
+
+The project dependency list is in `pyproject.toml`, `requirements.txt` is the pip-compatible export of the same lockfile. After changing dependencies, update both files with `uv lock` and `uv export --format requirements.txt --no-hashes --output-file requirements.txt`.
 
 ### 📚 List of notebooks
 Find a list of notebooks in table below extended with articles dedicated to this project in the [Medium publications series](https://medium.com/@brightcode/welcome-to-the-series-building-llm-ai-agent-applications-with-langchain-and-langgraph-0b52f21c624d).   
@@ -63,21 +71,29 @@ Each notebook has a corresponding article that provides a detailed explanation o
 
 Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzenie aplikacji opartych na LLM i agentach AI z LangChain oraz LangGraph" (videopoint/Helion 2025)
 
+Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
+
 ## Uruchomienie
-1) Instalacja uv  
-`curl -LsSf https://astral.sh/uv/install.sh | sh`
-2) Utwórz środowisko wirtualne  
-`uv venv`
-3) Aktywuj środowisko wirtualne  
-`source .venv/bin/activate` (dla Windows: `.venv\Scripts\activate`)  
-4) Zainstaluj wymagane biblioteki  
-`uv pip install -r requirements.txt`
-5) Zainstaluj środowisko jupyter lab  
-`uv pip install jupyterlab ipykernel`
-6) Zarejestruj kernel  
-`python -m ipykernel install --user --name=llm-course --display-name "LLM Course (uv)"`
-7) Uruchom jupyter lab  
-`jupyter lab`
+### Google Colab
+
+1. W Colab wybierz **Plik → Otwórz notatnik → GitHub** i podaj adres tego repozytorium.
+2. Otwórz dowolny notebook i uruchom pierwszą komórkę kodu. Zainstaluje ona pakiety używane w tym notebooku. Notebooki korzystające z plików przykładowych pobiorą je automatycznie.
+3. W przykładach OpenAI dodaj `OPENAI_API_KEY` w panelu **Secrets** (🔑) i zezwól notebookowi na dostęp. Odkomentuj krótki fragment `userdata` w pierwszej komórce. Inne potrzebne klucze, np. `TAVILY_API_KEY`, są opisane w odpowiednim notebooku.
+
+### Lokalnie z uv
+
+Zainstaluj [uv](https://docs.astral.sh/uv/getting-started/installation/), a następnie w katalogu głównym repozytorium uruchom:
+
+```bash
+uv sync
+uv run jupyter lab
+```
+
+`uv sync` wybierze Python 3.13 z `.python-version`, utworzy `.venv` i zainstaluje wersje przypięte w pliku `uv.lock`, nie musisz aktywować środowiska ani osobno rejestrować kernela Jupyter. Skopiuj `.env.example` do `.env` i dodaj potrzebne klucze. Nie publikuj pliku `.env` ani kluczy API.
+
+To środowisko służy do uruchamiania notebooków kursu. Aplikacja RAG w Streamlit znajduje się w `apps/7_3_LLM_streamlit_chatbot_RAG` i ma własne instrukcje oraz plik z zależnościami.
+
+Lista zależności projektu znajduje się w `pyproject.toml`. `requirements.txt` to zgodny z pip eksport tego samego lockfile. Po zmianie zależności zaktualizuj oba pliki poleceniami `uv lock` oraz `uv export --format requirements.txt --no-hashes --output-file requirements.txt`.
 
 ### ✅ Ćwiczenia
 Materiały do zadań i ćwiczeń znajdują się w folderze: [exercises/pl/](exercises/pl)
@@ -112,9 +128,3 @@ Materiały do zadań i ćwiczeń znajdują się w folderze: [exercises/pl/](exer
 | [10_1_Application_discussion_panel_with_supervisor.ipynb](notebooks/pl/10_1_Application_discussion_panel_with_supervisor.ipynb) | Przykład aplikacji opartej LangGraph - "Panel dyskusyjny 4 agentów"                                                           |
 | [11_1_Model_agnostic_gateway_production.ipynb](notebooks/pl/11_1_Model_agnostic_gateway_production.ipynb)                       | Wzorzec aplikacji model agnostic API gateway oraz human in the loop.                                                          |
 | [12_0_Bonus_Application_financial_report_generator.ipynb](notebooks/pl/12_0_Bonus_Application_financial_report_generator.ipynb) | Przykład aplikacji generujacej raport finansowy.                                                                              |
-
-
-## <del>Problemy</del> Wyzwania
-W razie wystapienia konfliktu bibliotek odinstaluj zależności i zainstaluj ponownie.  
-`pip uninstall -y langchain langchain-core langchain-community langchain-classic langchain-text-spliitters langchain-openai langgraph-supervisor`  
-`pip install -r requirements.txt`
