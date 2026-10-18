@@ -1,23 +1,24 @@
 import os
+from operator import itemgetter
+
 import streamlit as st
-
-from lib import utils
-from lib.ChatPrompt import ChatPrompt
-from lib.DocumentLoader import DocumentLoader
-
+from langchain_community.chat_message_histories import ChatMessageHistory
 from langchain_community.vectorstores import DocArrayInMemorySearch
 from langchain_core.chat_history import BaseChatMessageHistory
-from langchain_community.chat_message_histories import ChatMessageHistory
-from langchain_core.runnables.history import RunnableWithMessageHistory
-from langchain_core.runnables import RunnablePassthrough
+from langchain_core.messages import AIMessage, HumanMessage
 from langchain_core.output_parsers import StrOutputParser
-from langchain_core.messages import HumanMessage, AIMessage
-from operator import itemgetter
+from langchain_core.runnables import RunnablePassthrough
+from langchain_core.runnables.history import RunnableWithMessageHistory
+from lib import utils
+from lib.chat_prompt import ChatPrompt
+from lib.document_loader import DocumentLoader
 
 st.set_page_config(page_title="Chat", page_icon="📄")
 st.header('AI chat - search for information in source documents with RAG')
 st.write(
-    'This application has access to custom documents and can respond to user queries by referring to the content within those documents.')
+    "This application has access to custom documents and can respond to user "
+    "queries by referring to the content within those documents."
+)
 
 
 class CustomDocChatbot:
@@ -135,7 +136,9 @@ class CustomDocChatbot:
                             context_docs = chunk["context"]
 
                     # Store the complete response in both places
-                    st.session_state.messages.append({"role": "assistant", "content": response_text})
+                    st.session_state.messages.append(
+                        {"role": "assistant", "content": response_text}
+                    )
                     # Add assistant message to LangChain history
                     session_history.add_message(AIMessage(content=response_text))
 

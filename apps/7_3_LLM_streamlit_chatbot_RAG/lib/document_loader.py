@@ -3,11 +3,12 @@ from pathlib import Path
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
+
 class DocumentLoader:
     def __init__(self):
         self.documents_path = ''
 
-    def load_chunks(self)->list[Document]:
+    def load_chunks(self) -> list[Document]:
         """Load and chunk text documents from the data directory.
 
         Returns:

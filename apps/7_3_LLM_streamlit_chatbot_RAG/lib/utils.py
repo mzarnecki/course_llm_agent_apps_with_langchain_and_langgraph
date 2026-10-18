@@ -1,9 +1,10 @@
 import os
+
 import streamlit as st
-from langchain_core.documents import Document
-from streamlit.logger import get_logger
-from langchain_openai import ChatOpenAI
 from langchain_community.embeddings.fastembed import FastEmbedEmbeddings
+from langchain_core.documents import Document
+from langchain_openai import ChatOpenAI
+from streamlit.logger import get_logger
 
 logger = get_logger('Langchain-Chatbot')
 
@@ -27,7 +28,12 @@ def enable_chat_history(func):
 
         # show chat history on ui
         if "messages" not in st.session_state:
-            st.session_state["messages"] = [{"role": "assistant", "content": "Which information from source documents do you need?"}]
+            st.session_state["messages"] = [
+                {
+                    "role": "assistant",
+                    "content": "Which information from source documents do you need?",
+                }
+            ]
         for msg in st.session_state["messages"]:
             st.chat_message(msg["role"]).write(msg["content"])
 

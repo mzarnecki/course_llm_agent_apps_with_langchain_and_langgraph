@@ -1,5 +1,7 @@
-from unittest.mock import Mock, patch, MagicMock
-from lib.utils import display_msg, print_qa, format_docs
+from unittest.mock import MagicMock, Mock, patch
+
+from lib.utils import display_msg, format_docs, print_qa
+
 
 class TestUtils:
     @patch('lib.utils.st')

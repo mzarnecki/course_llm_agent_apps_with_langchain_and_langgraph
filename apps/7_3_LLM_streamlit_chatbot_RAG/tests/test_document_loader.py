@@ -1,6 +1,7 @@
 import pytest
-from lib.DocumentLoader import DocumentLoader
 from langchain_core.documents import Document
+from lib.document_loader import DocumentLoader
+
 
 class TestDocumentLoader:
 
