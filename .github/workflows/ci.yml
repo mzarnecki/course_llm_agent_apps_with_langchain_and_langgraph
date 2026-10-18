@@ -35,17 +35,17 @@ jobs:
           uv venv
           source .venv/bin/activate
           uv pip install -r requirements.txt
-          uv pip install ruff nbqa pytest nbmake
+          uv pip install ruff pytest nbmake
 
       - name: Lint Python
         run: |
           . .venv/bin/activate
-          ruff check . --extend-exclude exercises/
+          ruff check . --extend-exclude 'exercises/**,**/*.ipynb'
 
-      - name: Lint notebooks with nbqa-ruff
+      - name: Check notebook syntax and correctness
         run: |
           . .venv/bin/activate
-          nbqa ruff --fix notebooks || echo "No notebooks dir or none to lint"
+          ruff check notebooks --select F
 
       - name: Run notebooks with nbmake
         run: |
