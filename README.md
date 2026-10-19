@@ -69,8 +69,13 @@ Each notebook has a corresponding article that provides a detailed explanation o
 
 ## <a id="pl"></a>🇵🇱 Materiały do kursu "Tworzenie aplikacji opartych na LLM i agentach AI z LangChain oraz LangGraph"
 
-Repozytorium zawiera notatniki Jupyter Notebook z przykładami do kursu "Tworzenie aplikacji opartych na LLM i agentach AI z LangChain oraz LangGraph" (videopoint/Helion 2025)
+Repozytorium zawiera notatniki Jupyter z przykładami do kursu "Tworzenie aplikacji opartych na LLM i agentach AI z LangChain oraz LangGraph" (videopoint/Helion 2025/2026).   
 
+Przykłady zawarte w notatnikach są intuicyjne i stopniowo wdrażają w coraz bardziej zaawansowane koncepcje tworzenia aplikacji opartych na LLM i agentach. Notatniki zawierają wyniki wykonania kodu oraz komentarze wyjaśniające wykorzystane komponenty. Można je analizować jako odrębne źródło wiedzy bez uruchomionego wideo.
+
+Biblioteki LangChain i LangGraph są udoskonalane w szybkim tempie. Staram się, aby to repozytorium zawierało przykłady zgodne z aktualną składnią bibliotek.    
+Niektóre przykłady moga się w niewielkim stopniu odbiegać od kodu prezentowanego w nagraniach wideo ze względu na zmiany w nowych wersjach bibliotek.   
+Data ostatniej aktualizacji przykładów kodu: <b>19.10.2026</b>.   
 Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
 
 ## Uruchomienie
