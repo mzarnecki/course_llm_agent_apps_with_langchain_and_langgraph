@@ -39,6 +39,7 @@ dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.30",
     "langchain-mcp-adapters>=0.1",
+    "mcp>=1.24,<2",
     "fastmcp>=2",
     "nest-asyncio>=1.6",
     "rapidfuzz>=3",
