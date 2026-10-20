@@ -14,6 +14,26 @@ The LangChain and LangGraph libraries evolve at a rapid pace. I strive to ensure
 Date of last code update: **October 19, 2026**.
 The examples follow the [LangChain for Python documentation](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph for Python documentation](https://docs.langchain.com/oss/python/langgraph/overview). For older API versions, please refer to the `langchain-classic` compatibility layer.
 
+### 🗺️ Course map
+
+```mermaid
+flowchart LR
+    subgraph F["Foundations"]
+        direction TB
+        C1["1 · LLM differences"] --> C2["2 · LangChain basics<br/>models, prompts, memory"] --> C3["3 · Chains, tools<br/>& agents"] --> C4["4 · Multimodal models"] --> C5["5 · Prompt engineering"]
+    end
+    subgraph Q["Quality & data"]
+        direction TB
+        C6["6 · Evaluation<br/>& guardrails"] --> C7["7 · RAG &<br/>vector databases"]
+    end
+    subgraph A["Agents & applications"]
+        direction TB
+        C8["8 · LangGraph"] --> C9["9–10 · Multi-agent<br/>applications"] --> C11["11 · Production patterns"] --> C13["13 · Deep Agents"]
+    end
+    F --> Q --> A
+    C11 -.-> C12["12 · Bonus: financial<br/>report generator"]
+```
+
 ## Setup
 ### Google Colab
 
@@ -35,26 +55,6 @@ uv run jupyter lab
 This environment is for the course notebooks. The Streamlit RAG app under `apps/7_3_LLM_streamlit_chatbot_RAG` has its own setup instructions and requirements file.
 
 The project dependency list is in `pyproject.toml`, `requirements.txt` is the pip-compatible export of the same lockfile. After changing dependencies, update both files with `uv lock` and `uv export --format requirements.txt --no-hashes --output-file requirements.txt`.
-
-### 🗺️ Course map
-
-```mermaid
-flowchart LR
-    subgraph F["Foundations"]
-        direction TB
-        C1["1 · LLM differences"] --> C2["2 · LangChain basics<br/>models, prompts, memory"] --> C3["3 · Chains, tools<br/>& agents"] --> C4["4 · Multimodal models"] --> C5["5 · Prompt engineering"]
-    end
-    subgraph Q["Quality & data"]
-        direction TB
-        C6["6 · Evaluation<br/>& guardrails"] --> C7["7 · RAG &<br/>vector databases"]
-    end
-    subgraph A["Agents & applications"]
-        direction TB
-        C8["8 · LangGraph"] --> C9["9–10 · Multi-agent<br/>applications"] --> C11["11 · Production patterns"] --> C13["13 · Deep Agents"]
-    end
-    F --> Q --> A
-    C11 -.-> C12["12 · Bonus: financial<br/>report generator"]
-```
 
 ### 📚 List of notebooks
 Find a list of notebooks in table below extended with articles dedicated to this project in the [Medium publications series](https://medium.com/@brightcode/welcome-to-the-series-building-llm-ai-agent-applications-with-langchain-and-langgraph-0b52f21c624d).   
@@ -104,6 +104,26 @@ Niektóre przykłady mogą w niewielkim stopniu odbiegać od kodu prezentowanego
 Data ostatniej aktualizacji przykładów kodu: <b>20.10.2026</b>.   
 Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
 
+### 🗺️ Mapa kursu
+
+```mermaid
+flowchart LR
+    subgraph F["Podstawy"]
+        direction TB
+        C1["1 · Różnice między modelami LLM"] --> C2["2 · Podstawy LangChain<br/>modele, prompty, pamięć"] --> C3["3 · Łańcuchy, narzędzia<br/>i agenci"] --> C4["4 · Modele multimodalne"] --> C5["5 · Inżynieria promptów"]
+    end
+    subgraph Q["Jakość i załączanie źródła danych"]
+        direction TB
+        C6["6 · Ewaluacja<br/>i guardrails"] --> C7["7 · RAG i<br/>bazy wektorowe"]
+    end
+    subgraph A["Agenci i aplikacje"]
+        direction TB
+        C8["8 · LangGraph"] --> C9["9–10 · Aplikacje<br/>wieloagentowe"] --> C11["11 · Wzorce produkcyjne"] --> C13["13 · Deep Agents"]
+    end
+    F --> Q --> A
+    C11 -.-> C12["12 · Bonus: generator<br/>raportów finansowych"]
+```
+
 ## Uruchomienie
 ### Google Colab
 
@@ -125,26 +145,6 @@ uv run jupyter lab
 To środowisko służy do uruchamiania notebooków kursu. Aplikacja RAG w Streamlit znajduje się w `apps/7_3_LLM_streamlit_chatbot_RAG` i ma własne instrukcje oraz plik z zależnościami.
 
 Lista zależności projektu znajduje się w `pyproject.toml`. `requirements.txt` to zgodny z pip eksport tego samego lockfile. Po zmianie zależności zaktualizuj oba pliki poleceniami `uv lock` oraz `uv export --format requirements.txt --no-hashes --output-file requirements.txt`.
-
-### 🗺️ Mapa kursu
-
-```mermaid
-flowchart LR
-    subgraph F["Podstawy"]
-        direction TB
-        C1["1 · Różnice między modelami LLM"] --> C2["2 · Podstawy LangChain<br/>modele, prompty, pamięć"] --> C3["3 · Łańcuchy, narzędzia<br/>i agenci"] --> C4["4 · Modele multimodalne"] --> C5["5 · Inżynieria promptów"]
-    end
-    subgraph Q["Jakość i załączanie źródła danych"]
-        direction TB
-        C6["6 · Ewaluacja<br/>i guardrails"] --> C7["7 · RAG i<br/>bazy wektorowe"]
-    end
-    subgraph A["Agenci i aplikacje"]
-        direction TB
-        C8["8 · LangGraph"] --> C9["9–10 · Aplikacje<br/>wieloagentowe"] --> C11["11 · Wzorce produkcyjne"] --> C13["13 · Deep Agents"]
-    end
-    F --> Q --> A
-    C11 -.-> C12["12 · Bonus: generator<br/>raportów finansowych"]
-```
 
 ### ✅ Ćwiczenia
 Materiały do zadań i ćwiczeń znajdują się w folderze: [exercises/pl/](exercises/pl)
