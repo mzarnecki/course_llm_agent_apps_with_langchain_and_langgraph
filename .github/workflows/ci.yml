@@ -30,24 +30,19 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y graphviz graphviz-dev
 
+      # --locked fails if uv.lock is out of date with pyproject.toml
       - name: Install dependencies
-        run: |
-          uv venv
-          source .venv/bin/activate
-          uv pip install -r requirements.txt
-          uv pip install ruff pytest nbmake
+        run: uv sync --locked --extra dev
 
       - name: Lint Python
-        run: |
-          . .venv/bin/activate
-          ruff check . --extend-exclude 'exercises/**,**/*.ipynb'
+        run: uv run --no-sync ruff check . --extend-exclude 'exercises/**,**/*.ipynb'
 
       - name: Check notebook syntax and correctness
-        run: |
-          . .venv/bin/activate
-          ruff check notebooks --select F
+        run: uv run --no-sync ruff check notebooks --select F
+
+      # imports every module used by the notebooks; needs no API keys
+      - name: Import smoke test
+        run: uv run --no-sync pytest tests/test_notebook_imports.py
 
       - name: Run notebooks with nbmake
-        run: |
-          . .venv/bin/activate
-          pytest --nbmake notebooks/**/*.ipynb -k "not expensive" || echo "No notebooks or tests"
+        run: uv run --no-sync pytest --nbmake notebooks/**/*.ipynb -k "not expensive" || echo "No notebooks or tests"

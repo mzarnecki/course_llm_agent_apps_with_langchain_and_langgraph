@@ -41,6 +41,7 @@ dependencies = [
     "langchain-mcp-adapters>=0.1",
     "mcp>=1.24,<2",
     "fastmcp>=2",
+    "deepagents>=0.7",
     "nest-asyncio>=1.6",
     "rapidfuzz>=3",
     "reportlab>=4",
