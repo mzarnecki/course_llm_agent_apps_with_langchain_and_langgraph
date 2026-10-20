@@ -6,9 +6,13 @@
 
 ## <a id="en"></a>🇬🇧 Notebooks for articles & tutorials (LangChain / LangGraph)
 
-This repository also ships **English notebooks** meant for blog posts, tutorials and videos.
+This repository contains Jupyter notebooks with examples for building LLM-based applications and AI agents with LangChain and LangGraph libraries.
 
-The current course examples use the [LangChain Python docs](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph Python docs](https://docs.langchain.com/oss/python/langgraph/overview). Earlier lessons that teach legacy APIs use the `langchain-classic` compatibility package.
+The examples provided in the notebooks are practical, guiding you through increasingly advanced applications of LLMs and AI agents. The notebooks include code execution outputs and detailed explanations of the components used.
+
+The LangChain and LangGraph libraries evolve at a rapid pace. I strive to ensure that this repository contains examples consistent with the current syntax of these libraries.
+Date of last code update: **October 19, 2026**.
+The examples follow the [LangChain for Python documentation](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph for Python documentation](https://docs.langchain.com/oss/python/langgraph/overview). For older API versions, please refer to the `langchain-classic` compatibility layer.
 
 ## Setup
 ### Google Colab
