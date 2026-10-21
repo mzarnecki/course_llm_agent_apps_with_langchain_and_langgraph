@@ -9,11 +9,6 @@
 This repository contains Jupyter notebooks with examples for building LLM-based applications and AI agents with LangChain and LangGraph libraries.
 
 The examples provided in the notebooks are practical, guiding you through increasingly advanced applications of LLMs and AI agents. The notebooks include code execution outputs and detailed explanations of the components used.
-
-The LangChain and LangGraph libraries evolve at a rapid pace. I strive to ensure that this repository contains examples consistent with the current syntax of these libraries.
-Date of last code update: **October 19, 2026**.
-The examples follow the [LangChain for Python documentation](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph for Python documentation](https://docs.langchain.com/oss/python/langgraph/overview). For older API versions, please refer to the `langchain-classic` compatibility layer.
-
 ### 🗺️ Course map
 
 ```mermaid
@@ -34,8 +29,18 @@ flowchart LR
     C11 -.-> C12["12 · Bonus: financial<br/>report generator"]
 ```
 
+### LangChain and LangGraph evolution 
+
+The LangChain and LangGraph libraries evolve at a rapid pace. I strive to ensure that this repository contains examples consistent with the current syntax of these libraries.
+Date of last code update: **October 19, 2026**.
+The examples follow the [LangChain for Python documentation](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph for Python documentation](https://docs.langchain.com/oss/python/langgraph/overview). For older API versions, please refer to the `langchain-classic` compatibility layer.
+
 ## Setup
 ### Google Colab
+
+[Google Colab](https://colab.research.google.com/) is a free, browser-based Jupyter notebook environment from Google, so there is nothing to install. The free tier even includes GPU access (not needed for this course), and the built-in Gemini assistant can fix code for you and explain any part of it you ask about. New to Colab? Start with the [Colab introduction notebook](https://colab.research.google.com/notebooks/intro.ipynb).
+
+The quickest way in: click the **Open in Colab** button next to a notebook in the tables below or at the top of any notebook. You can also open notebooks manually:
 
 1. In Colab, choose **File → Open notebook → GitHub** and enter this repository URL.
 2. Open any notebook and run its first code cell. It installs the packages used by that notebook. Notebooks that use sample files download them automatically.
@@ -99,11 +104,6 @@ Repozytorium zawiera notatniki Jupyter z przykładami do kursu "Tworzenie aplika
 
 Przykłady zawarte w notatnikach są intuicyjne i stopniowo wdrażają w coraz bardziej zaawansowane koncepcje tworzenia aplikacji opartych na LLM i agentach. Notatniki zawierają wyniki wykonania kodu oraz komentarze wyjaśniające wykorzystane komponenty. Można je analizować jako odrębne źródło wiedzy bez uruchomionego wideo.
 
-Biblioteki LangChain i LangGraph są udoskonalane w szybkim tempie. Staram się, aby to repozytorium zawierało przykłady zgodne z aktualną składnią bibliotek.    
-Niektóre przykłady mogą w niewielkim stopniu odbiegać od kodu prezentowanego w nagraniach wideo ze względu na zmiany w nowych wersjach bibliotek.   
-Data ostatniej aktualizacji przykładów kodu: <b>20.10.2026</b>.   
-Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
-
 ### 🗺️ Mapa kursu
 
 ```mermaid
@@ -124,8 +124,19 @@ flowchart LR
     C11 -.-> C12["12 · Bonus: generator<br/>raportów finansowych"]
 ```
 
+### Rozwój bibliotek LangChain i LangGraph 
+
+Biblioteki LangChain i LangGraph są udoskonalane w szybkim tempie. Staram się, aby to repozytorium zawierało przykłady zgodne z aktualną składnią bibliotek.    
+Niektóre przykłady mogą w niewielkim stopniu odbiegać od kodu prezentowanego w nagraniach wideo ze względu na zmiany w nowych wersjach bibliotek.   
+Data ostatniej aktualizacji przykładów kodu: <b>20.10.2026</b>.   
+Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
+
 ## Uruchomienie
 ### Google Colab
+
+[Google Colab](https://colab.research.google.com/) to darmowe środowisko notebooków Jupyter od Google działające w przeglądarce, więc nie trzeba niczego instalować. Darmowy plan daje nawet dostęp do GPU (niepotrzebnego w tym kursie), a wbudowany asystent Gemini poprawi za Ciebie kod i wyjaśni każdy jego fragment, o który zapytasz. Nie korzystałeś/aś z Google Colab do tej pory? Zacznij od [notebooka wprowadzającego do Colab](https://colab.research.google.com/notebooks/intro.ipynb).
+
+Najszybciej: kliknij przycisk **Open in Colab** przy notebooku w tabelach poniżej albo na górze dowolnego notebooka. Możesz też otworzyć notebook ręcznie:
 
 1. W Colab wybierz **Plik → Otwórz notatnik → GitHub** i podaj adres tego repozytorium.
 2. Otwórz dowolny notebook i uruchom pierwszą komórkę kodu. Zainstaluje ona pakiety używane w tym notebooku. Notebooki korzystające z plików przykładowych pobiorą je automatycznie.
