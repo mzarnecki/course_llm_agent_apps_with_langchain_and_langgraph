@@ -32,7 +32,7 @@ flowchart LR
 ### LangChain and LangGraph evolution 
 
 The LangChain and LangGraph libraries evolve at a rapid pace. I strive to ensure that this repository contains examples consistent with the current syntax of these libraries.
-Date of last code update: **October 19, 2026**.
+Date of last code update: **October 21, 2026**.
 The examples follow the [LangChain for Python documentation](https://docs.langchain.com/oss/python/langchain/overview) and [LangGraph for Python documentation](https://docs.langchain.com/oss/python/langgraph/overview). For older API versions, please refer to the `langchain-classic` compatibility layer.
 
 ## Setup
@@ -63,7 +63,7 @@ The project dependency list is in `pyproject.toml`, `requirements.txt` is the pi
 
 ### 📚 List of notebooks
 Find a list of notebooks in table below extended with articles dedicated to this project in the [Medium publications series](https://medium.com/@brightcode/welcome-to-the-series-building-llm-ai-agent-applications-with-langchain-and-langgraph-0b52f21c624d).   
-Each notebook has a corresponding article that provides a detailed explanation of the concepts and code used in the notebook -> access them by clicking on the "Article" links below.
+Where available, a corresponding article provides a detailed explanation of the concepts and code used in the notebook -> access it by clicking the "Article" link below.
 
 | Notebook | Colab | Description | Article |
 |---|---|---|---|
@@ -128,7 +128,7 @@ flowchart LR
 
 Biblioteki LangChain i LangGraph są udoskonalane w szybkim tempie. Staram się, aby to repozytorium zawierało przykłady zgodne z aktualną składnią bibliotek.    
 Niektóre przykłady mogą w niewielkim stopniu odbiegać od kodu prezentowanego w nagraniach wideo ze względu na zmiany w nowych wersjach bibliotek.   
-Data ostatniej aktualizacji przykładów kodu: <b>20.10.2026</b>.   
+Data ostatniej aktualizacji przykładów kodu: <b>21.10.2026</b>.   
 Aktualne przykłady korzystają z [dokumentacji LangChain dla Pythona](https://docs.langchain.com/oss/python/langchain/overview) oraz [dokumentacji LangGraph dla Pythona](https://docs.langchain.com/oss/python/langgraph/overview). Wcześniejsze lekcje pokazujące starsze API używają pakietu zgodności `langchain-classic`.
 
 ## Uruchomienie
