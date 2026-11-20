@@ -5,9 +5,6 @@ Chatbot has access to trade register documents related to Ticos Systems company 
 
 <img src="chat_example.png" width="500px"/>
 
-as language model OpenAI GPT-4o was used
-to run chat in browser streamlit library was used
-
 ## Usage
 1. before run install needed libraries as below:\
 `pip install -r requirements.txt`
