@@ -56,7 +56,9 @@ def configure_llm()->ChatOpenAI:
     Returns:
         ChatOpenAI: LLM model client.
     """
-    llm = ChatOpenAI(model_name='gpt-6.1-terra', reasoning_effort='none', temperature=0, streaming=True)
+    llm = ChatOpenAI(
+        model_name='gpt-6.1-terra', reasoning_effort='none', temperature=0, streaming=True
+    )
     return llm
 
 def print_qa(cls, question: str, answer: str):
