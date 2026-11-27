@@ -20,9 +20,8 @@ class DocumentLoader:
 
         for file in data_path.iterdir():
             if file.suffix == ".txt":
-                with open(file) as f:
-                    docs.append(f.read())
-                    files.append(file.name)
+                docs.append(file.read_text(encoding="utf-8"))
+                files.append(file.name)
 
         # Split documents and store in vector db
         text_splitter = RecursiveCharacterTextSplitter(

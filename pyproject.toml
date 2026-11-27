@@ -44,6 +44,7 @@ dependencies = [
     "deepagents>=0.7",
     "nest-asyncio>=1.6",
     "rapidfuzz>=3",
+    "rank-bm25>=0.2",
     "reportlab>=4",
     "scrapy>=2",
     "sec-api>=1",
@@ -54,6 +55,10 @@ dependencies = [
     "yfinance>=0.2",
     "boto3>=1",
     "requests>=2",
+    "docling>=2",
+    "langchain-neo4j>=0.4",
+    "networkx>=3",
+    "langgraph-checkpoint-sqlite>=3",
 ]
 
 [project.optional-dependencies]

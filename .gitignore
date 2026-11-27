@@ -8,3 +8,5 @@ vectors.db
 working.ipynb
 app.py
 math_server.py
+kb_server.py
+sales_db_server.py

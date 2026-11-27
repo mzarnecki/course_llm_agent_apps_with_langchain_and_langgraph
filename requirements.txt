@@ -2,6 +2,8 @@
 #    uv export --format requirements.txt --no-hashes --output-file requirements.txt
 absl-py==2.5.1
     # via rouge-score
+accelerate==1.16.0
+    # via docling-slim
 aiofile==3.12.3
     # via py-key-value-aio
 aiohappyeyeballs==2.7.1
@@ -21,6 +23,7 @@ aiosignal==1.4.0
     # via aiohttp
 aiosqlite==0.20.0
     # via
+    #   langgraph-checkpoint-sqlite
     #   openbb-econdb
     #   openbb-sec
 annotated-doc==0.0.5
@@ -84,6 +87,7 @@ beartype==0.23.1
     # via py-key-value-aio
 beautifulsoup4==4.15.0
     # via
+    #   docling-slim
     #   nbconvert
     #   openbb-federal-reserve
     #   openbb-sec
@@ -114,6 +118,7 @@ cattrs==26.2.1
 certifi==2026.7.22
     # via
     #   curl-cffi
+    #   docling-slim
     #   httpcore
     #   httpx
     #   langchain-openai
@@ -134,17 +139,21 @@ click==8.5.0
     # via
     #   huggingface-hub
     #   nltk
+    #   python-oxmsg
     #   uvicorn
 cloudpickle==3.1.2
     # via joblib
 colorama==0.4.6
     # via
+    #   colorlog
     #   ipython
     #   pytest
     #   sacrebleu
     #   tqdm
     #   typer
     #   uvicorn
+colorlog==6.12.0
+    # via rapidocr
 comm==0.2.3
     # via ipykernel
 constantly==23.10.4
@@ -185,18 +194,36 @@ deepdiff==9.1.0
     # via openbb-platform-api
 defusedxml==0.7.1
     # via
+    #   docling-core
+    #   docling-slim
     #   nbconvert
     #   nltk
     #   openbb-imf
     #   openbb-oecd
     #   openbb-sec
     #   scrapy
+dill==0.4.1
+    # via multiprocess
 distro==1.9.0
     # via
     #   google-genai
     #   langsmith
 dnspython==2.9.0
     # via email-validator
+doclang==0.10.1
+    # via docling-core
+docling==2.152.0
+    # via course-llm-langchain-langgraph
+docling-core==2.108.0
+    # via
+    #   docling-parse
+    #   docling-slim
+docling-ibm-models==4.0.4
+    # via docling-slim
+docling-parse==7.28.0
+    # via docling-slim
+docling-slim==2.152.0
+    # via docling
 docstring-parser==0.18.0
     # via
     #   anthropic
@@ -211,6 +238,8 @@ executing==2.3.0
     # via stack-data
 faiss-cpu==1.15.1
     # via course-llm-langchain-langgraph
+faker==40.63.0
+    # via polyfactory
 fastapi==0.136.3
     # via
     #   course-llm-langchain-langgraph
@@ -227,7 +256,9 @@ filelock==4.2.2
     #   tldextract
     #   torch
 filetype==1.2.0
-    # via langchain-google-genai
+    # via
+    #   docling-slim
+    #   langchain-google-genai
 fonttools==4.67.0
     # via matplotlib
 fqdn==1.6.0
@@ -239,6 +270,7 @@ frozenlist==1.8.0
 fsspec==2026.9.0
     # via
     #   huggingface-hub
+    #   neo4j-graphrag
     #   torch
 google-auth==2.62.0
     # via google-genai
@@ -263,6 +295,7 @@ httptools==0.9.0
     # via uvicorn
 httpx==0.28.1
     # via
+    #   docling-slim
     #   fastmcp-slim
     #   google-genai
     #   huggingface-hub
@@ -284,6 +317,9 @@ httpx2-jsfetch==1.0 ; sys_platform == 'emscripten'
     # via httpx2
 huggingface-hub==1.33.0
     # via
+    #   accelerate
+    #   docling-ibm-models
+    #   docling-slim
     #   sentence-transformers
     #   tokenizers
     #   transformers
@@ -362,6 +398,8 @@ joserfc==1.7.5
     # via
     #   authlib
     #   fastmcp-slim
+json-repair==0.64.9
+    # via neo4j-graphrag
 json5==0.17.3
     # via jupyterlab-server
 jsonpatch==1.35
@@ -371,9 +409,12 @@ jsonpointer==3.2.1
     #   jsonpatch
     #   jsonschema
 jsonref==1.1.0
-    # via fastmcp-slim
+    # via
+    #   docling-core
+    #   fastmcp-slim
 jsonschema==4.26.0
     # via
+    #   docling-core
     #   jupyter-events
     #   jupyterlab-server
     #   mcp
@@ -432,6 +473,7 @@ langchain-classic==1.0.8
     # via
     #   course-llm-langchain-langgraph
     #   langchain-community
+    #   langchain-neo4j
 langchain-community==0.4.2
     # via course-llm-langchain-langgraph
 langchain-core==1.6.12
@@ -444,6 +486,7 @@ langchain-core==1.6.12
     #   langchain-community
     #   langchain-google-genai
     #   langchain-mcp-adapters
+    #   langchain-neo4j
     #   langchain-openai
     #   langchain-tavily
     #   langchain-text-splitters
@@ -455,6 +498,8 @@ langchain-core==1.6.12
 langchain-google-genai==4.4.2
     # via deepagents
 langchain-mcp-adapters==0.3.2
+    # via course-llm-langchain-langgraph
+langchain-neo4j==0.11.0
     # via course-llm-langchain-langgraph
 langchain-openai==1.7.2
     # via course-llm-langchain-langgraph
@@ -468,15 +513,21 @@ langchain-text-splitters==1.1.3
     # via
     #   course-llm-langchain-langgraph
     #   langchain-classic
+langcodes==3.5.1
+    # via docling-slim
 langgraph==1.2.16
     # via
     #   course-llm-langchain-langgraph
     #   langchain
+    #   langchain-neo4j
     #   langgraph-supervisor
-langgraph-checkpoint==4.3.0
+langgraph-checkpoint==4.3.2
     # via
     #   langgraph
+    #   langgraph-checkpoint-sqlite
     #   langgraph-prebuilt
+langgraph-checkpoint-sqlite==3.1.3
+    # via course-llm-langchain-langgraph
 langgraph-prebuilt==1.1.1
     # via langgraph
 langgraph-sdk==0.4.8
@@ -492,19 +543,28 @@ langsmith==0.14.11
     #   langchain-core
 lark==1.3.1
     # via rfc3987-syntax
+latex2mathml==3.81.1
+    # via docling-core
 llvmlite==0.50.0
     # via
     #   numba
     #   pynndescent
 lxml==6.1.3
     # via
+    #   doclang
     #   openbb-sec
     #   parsel
+    #   python-docx
+    #   python-pptx
     #   sacrebleu
     #   scrapy
     #   yfinance
+mail-parser==4.11.0
+    # via docling-slim
 markdown-it-py==4.2.0
     # via rich
+marko==2.2.5
+    # via docling-slim
 markupsafe==3.0.4
     # via
     #   jinja2
@@ -528,12 +588,16 @@ more-itertools==11.2.1
     # via
     #   jaraco-classes
     #   jaraco-functools
+mpire==2.10.2
+    # via semchunk
 mpmath==1.3.0
     # via sympy
 multidict==7.1.0
     # via
     #   aiohttp
     #   yarl
+multiprocess==0.70.19
+    # via mpire
 multitasking==0.0.13
     # via yfinance
 narwhals==2.27.1
@@ -547,12 +611,20 @@ nbformat==5.11.1
     #   jupyter-server
     #   nbclient
     #   nbconvert
+neo4j==6.4.1
+    # via
+    #   langchain-neo4j
+    #   neo4j-graphrag
+neo4j-graphrag==1.24.0
+    # via langchain-neo4j
 nest-asyncio==1.6.0
     # via course-llm-langchain-langgraph
 nest-asyncio2==1.7.4
     # via ipykernel
 networkx==3.7
-    # via torch
+    # via
+    #   course-llm-langchain-langgraph
+    #   torch
 nltk==3.10.3
     # via
     #   course-llm-langchain-langgraph
@@ -565,18 +637,28 @@ numba==0.68.0
     #   umap-learn
 numpy==2.5.4
     # via
+    #   accelerate
     #   contourpy
     #   course-llm-langchain-langgraph
+    #   docling-ibm-models
+    #   docling-slim
     #   faiss-cpu
     #   langchain-community
     #   matplotlib
+    #   neo4j-graphrag
     #   numba
+    #   opencv-python-headless
     #   pandas
+    #   rank-bm25
+    #   rapidocr
     #   rouge-score
     #   sacrebleu
+    #   safetensors
     #   scikit-learn
     #   scipy
     #   sentence-transformers
+    #   shapely
+    #   torchvision
     #   transformers
     #   umap-learn
     #   yfinance
@@ -621,6 +703,10 @@ nvidia-nvshmem-cu13==3.4.5 ; sys_platform == 'linux'
     # via torch
 nvidia-nvtx==13.0.85 ; (platform_machine == 'aarch64' and sys_platform == 'linux') or (platform_machine == 'x86_64' and sys_platform == 'linux')
     # via cuda-toolkit
+olefile==0.47
+    # via python-oxmsg
+omegaconf==2.4.0
+    # via rapidocr
 openai==3.35.1
     # via
     #   course-llm-langchain-langgraph
@@ -728,8 +814,11 @@ openbb-us-eia==1.3.1
     # via openbb
 openbb-yfinance==1.6.3
     # via openbb
+opencv-python-headless==5.1.0.95
+    # via rapidocr
 openpyxl==3.1.5
     # via
+    #   docling-slim
     #   openbb-federal-reserve
     #   openbb-us-eia
 opentelemetry-api==1.45.1
@@ -746,6 +835,7 @@ ormsgpack==1.13.0
     # via langgraph-checkpoint
 packaging==26.3
     # via
+    #   accelerate
     #   deepagents
     #   faiss-cpu
     #   fastmcp-slim
@@ -766,6 +856,7 @@ packaging==26.3
 pandas==3.0.6
     # via
     #   course-llm-langchain-langgraph
+    #   docling-core
     #   openbb-core
     #   yfinance
 pandocfilters==1.5.1
@@ -784,8 +875,15 @@ pexpect==4.9.0 ; sys_platform != 'emscripten' and sys_platform != 'win32'
     # via ipython
 pillow==13.0.0
     # via
+    #   docling-core
+    #   docling-ibm-models
+    #   docling-parse
+    #   docling-slim
     #   matplotlib
+    #   python-pptx
+    #   rapidocr
     #   reportlab
+    #   torchvision
 platformdirs==4.13.4
     # via
     #   fastmcp-slim
@@ -794,7 +892,11 @@ platformdirs==4.13.4
     #   scrapy
     #   yfinance
 pluggy==1.7.0
-    # via pytest
+    # via
+    #   docling-slim
+    #   pytest
+polyfactory==3.5.0
+    # via docling-slim
 portalocker==4.4.1
     # via sacrebleu
 prometheus-client==0.26.0
@@ -809,8 +911,10 @@ protego==0.7.0
     # via scrapy
 protobuf==7.36.2
     # via yfinance
-psutil==7.2.2 ; sys_platform != 'cygwin' and sys_platform != 'emscripten'
-    # via ipython
+psutil==7.2.2
+    # via
+    #   accelerate
+    #   ipython
 ptyprocess==0.7.0 ; os_name != 'nt' or (sys_platform != 'emscripten' and sys_platform != 'win32')
     # via
     #   pexpect
@@ -823,12 +927,17 @@ pyasn1==0.6.4
     # via pyasn1-modules
 pyasn1-modules==0.4.2
     # via google-auth
+pyclipper==1.4.0
+    # via rapidocr
 pycparser==3.11 ; implementation_name != 'PyPy'
     # via cffi
 pydantic==2.14.1
     # via
     #   anthropic
     #   course-llm-langchain-langgraph
+    #   docling-core
+    #   docling-parse
+    #   docling-slim
     #   fastapi
     #   fastmcp-slim
     #   google-genai
@@ -840,6 +949,7 @@ pydantic==2.14.1
     #   langgraph
     #   langsmith
     #   mcp
+    #   neo4j-graphrag
     #   openai
     #   openapi-pydantic
     #   openbb-core
@@ -848,6 +958,8 @@ pydantic-core==2.50.1
     # via pydantic
 pydantic-settings==2.16.0
     # via
+    #   docling-core
+    #   docling-slim
     #   fastmcp-slim
     #   langchain-community
     #   mcp
@@ -857,6 +969,7 @@ pygments==2.21.0
     # via
     #   ipython
     #   ipython-pygments-lexers
+    #   mpire
     #   nbconvert
     #   pytest
     #   rich
@@ -865,12 +978,18 @@ pyjwt==2.15.1
     # via
     #   mcp
     #   openbb-core
+pylatexenc==2.11
+    # via docling-slim
 pynndescent==0.6.0
     # via umap-learn
 pyopenssl==26.4.0
     # via scrapy
 pyparsing==3.3.3
     # via matplotlib
+pypdf==6.21.4
+    # via neo4j-graphrag
+pypdfium2==5.15.2
+    # via docling-slim
 pyperclip==1.11.0
     # via fastmcp-slim
 pypydispatcher==2.1.2 ; platform_python_implementation == 'PyPy'
@@ -884,9 +1003,12 @@ python-dateutil==2.9.0.post0
     #   jupyter-client
     #   matplotlib
     #   pandas
+python-docx==1.2.0
+    # via docling-slim
 python-dotenv==1.2.4
     # via
     #   course-llm-langchain-langgraph
+    #   docling-slim
     #   fastmcp-slim
     #   openbb-core
     #   pydantic-settings
@@ -898,10 +1020,19 @@ python-multipart==0.0.32
     #   fastmcp-slim
     #   mcp
     #   openbb-core
+python-oxmsg==0.0.2
+    # via docling-slim
+python-pptx==1.0.2
+    # via docling-slim
 pytz==2026.5
-    # via yfinance
+    # via
+    #   neo4j
+    #   yfinance
 pywin32==312 ; sys_platform == 'win32'
-    # via mcp
+    # via
+    #   docling-parse
+    #   mcp
+    #   mpire
 pywin32-ctypes==0.2.3 ; sys_platform == 'win32'
     # via keyring
 pywinpty==3.1.0 ; os_name == 'nt'
@@ -911,6 +1042,8 @@ pywinpty==3.1.0 ; os_name == 'nt'
     #   terminado
 pyyaml==6.0.3
     # via
+    #   accelerate
+    #   docling-core
     #   fastmcp-slim
     #   huggingface-hub
     #   jsonschema-path
@@ -918,6 +1051,9 @@ pyyaml==6.0.3
     #   langchain-classic
     #   langchain-community
     #   langchain-core
+    #   neo4j-graphrag
+    #   omegaconf
+    #   rapidocr
     #   transformers
     #   uvicorn
 pyzmq==27.2.0
@@ -929,8 +1065,12 @@ queuelib==1.10.0
     # via scrapy
 random-user-agent==1.0.1
     # via openbb-government-us
+rank-bm25==0.2.2
+    # via course-llm-langchain-langgraph
 rapidfuzz==3.14.6
     # via course-llm-langchain-langgraph
+rapidocr==3.10.0
+    # via docling-slim
 referencing==0.37.0
     # via
     #   jsonschema
@@ -948,6 +1088,8 @@ reportlab==5.0.1
 requests==2.34.2
     # via
     #   course-llm-langchain-langgraph
+    #   docling-core
+    #   docling-slim
     #   google-auth
     #   google-genai
     #   jupyterlab-server
@@ -956,6 +1098,7 @@ requests==2.34.2
     #   langchain-tavily
     #   langsmith
     #   openbb-core
+    #   rapidocr
     #   requests-cache
     #   requests-file
     #   requests-toolbelt
@@ -984,6 +1127,7 @@ rfc3987-syntax==1.1.0
 rich==15.0.0
     # via
     #   cyclopts
+    #   docling-slim
     #   fastmcp-slim
     #   rich-rst
     #   typer
@@ -995,6 +1139,8 @@ rpds-py==2026.9.1
     # via
     #   jsonschema
     #   referencing
+rtree==1.4.1
+    # via docling-slim
 ruff==0.15.22
     # via openbb-core
 s3transfer==0.19.2
@@ -1002,7 +1148,10 @@ s3transfer==0.19.2
 sacrebleu==2.6.0
     # via course-llm-langchain-langgraph
 safetensors==0.8.0
-    # via transformers
+    # via
+    #   accelerate
+    #   docling-ibm-models
+    #   transformers
 scikit-learn==1.9.1
     # via
     #   course-llm-langchain-langgraph
@@ -1011,6 +1160,8 @@ scikit-learn==1.9.1
     #   umap-learn
 scipy==1.18.1
     # via
+    #   docling-slim
+    #   neo4j-graphrag
     #   pynndescent
     #   scikit-learn
     #   sentence-transformers
@@ -1021,6 +1172,8 @@ sec-api==1.0.36
     # via course-llm-langchain-langgraph
 secretstorage==3.5.0 ; sys_platform == 'linux'
     # via keyring
+semchunk==3.2.5
+    # via docling-core
 send2trash==2.1.0
     # via jupyter-server
 sentence-transformers==6.1.0
@@ -1029,12 +1182,15 @@ service-identity==26.1.0
     # via scrapy
 setuptools==84.0.0
     # via torch
+shapely==2.2.0
+    # via rapidocr
 shellingham==1.5.4
     # via typer
 six==1.17.0
     # via
     #   html5lib
     #   python-dateutil
+    #   rapidocr
     #   rfc3339-validator
     #   rouge-score
     #   url-normalize
@@ -1050,6 +1206,8 @@ sqlalchemy==2.1.5
     # via
     #   langchain-classic
     #   langchain-community
+sqlite-vec==0.1.9
+    # via langgraph-checkpoint-sqlite
 sqlite-vss==0.1.2
     # via course-llm-langchain-langgraph
 sse-starlette==3.5.0
@@ -1065,7 +1223,9 @@ starlette==1.8.0
 sympy==1.14.0
     # via torch
 tabulate==0.10.0
-    # via sacrebleu
+    # via
+    #   docling-core
+    #   sacrebleu
 tavily-python==0.8.5
     # via course-llm-langchain-langgraph
 tenacity==9.1.4
@@ -1073,6 +1233,7 @@ tenacity==9.1.4
     #   google-genai
     #   langchain-community
     #   langchain-core
+    #   neo4j-graphrag
 terminado==0.18.1
     # via
     #   jupyter-server
@@ -1093,7 +1254,17 @@ tokenizers==0.23.3
     #   sentence-transformers
     #   transformers
 torch==2.14.1
-    # via sentence-transformers
+    # via
+    #   accelerate
+    #   docling-ibm-models
+    #   docling-slim
+    #   safetensors
+    #   sentence-transformers
+    #   torchvision
+torchvision==0.29.2
+    # via
+    #   docling-ibm-models
+    #   docling-slim
 tornado==6.5.10
     # via
     #   ipykernel
@@ -1103,8 +1274,12 @@ tornado==6.5.10
     #   terminado
 tqdm==4.70.1
     # via
+    #   docling-slim
     #   huggingface-hub
+    #   mpire
     #   nltk
+    #   rapidocr
+    #   semchunk
     #   sentence-transformers
     #   transformers
     #   umap-learn
@@ -1123,7 +1298,20 @@ traitlets==5.16.1
     #   nbconvert
     #   nbformat
 transformers==5.20.1
-    # via sentence-transformers
+    # via
+    #   docling-core
+    #   docling-ibm-models
+    #   sentence-transformers
+tree-sitter==0.26.1
+    # via docling-core
+tree-sitter-c==0.24.2
+    # via docling-core
+tree-sitter-javascript==0.25.0
+    # via docling-core
+tree-sitter-python==0.25.0
+    # via docling-core
+tree-sitter-typescript==0.23.2
+    # via docling-core
 triton==3.8.0 ; sys_platform == 'linux'
     # via torch
 truststore==0.10.5 ; sys_platform != 'emscripten'
@@ -1133,7 +1321,13 @@ truststore==0.10.5 ; sys_platform != 'emscripten'
 twisted==26.4.0
     # via scrapy
 typer==0.27.3
-    # via transformers
+    # via
+    #   doclang
+    #   docling-core
+    #   docling-slim
+    #   transformers
+types-pyyaml==6.0.12.20261122
+    # via neo4j-graphrag
 typing-extensions==4.16.0
     # via
     #   aiosqlite
@@ -1141,6 +1335,7 @@ typing-extensions==4.16.0
     #   anyio
     #   beautifulsoup4
     #   cattrs
+    #   docling-core
     #   fastapi
     #   fastmcp-slim
     #   google-genai
@@ -1153,10 +1348,14 @@ typing-extensions==4.16.0
     #   mcp
     #   openai
     #   opentelemetry-api
+    #   polyfactory
     #   py-key-value-aio
     #   pydantic
     #   pydantic-core
     #   pydantic-settings
+    #   python-docx
+    #   python-oxmsg
+    #   python-pptx
     #   sentence-transformers
     #   sqlalchemy
     #   torch
@@ -1171,6 +1370,7 @@ typing-inspection==0.4.4
 tzdata==2026.5
     # via
     #   arrow
+    #   faker
     #   pandas
 umap-learn==0.5.12
     # via course-llm-langchain-langgraph
@@ -1224,6 +1424,7 @@ websocket-client==1.9.2
     # via jupyter-server
 websockets==16.1.1
     # via
+    #   docling-slim
     #   fastmcp-slim
     #   google-genai
     #   langgraph-sdk
@@ -1235,6 +1436,8 @@ wikipedia==1.4.0
     # via course-llm-langchain-langgraph
 xlrd==2.0.2
     # via openbb-us-eia
+xlsxwriter==3.3.4
+    # via python-pptx
 xmltodict==0.13.0
     # via openbb-sec
 xxhash==4.0.1
